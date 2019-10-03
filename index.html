@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Book List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <i class="fas fa-book"></i>
+        <h3>My<span>Book</span>List</h3>
+      </div>
+      <form id="form-book">
+        <div class="form-group">
+          <label>Title:</label>
+          <input class="form-control" type="text" name="title" id="title" />
+        </div>
+        <div class="form-group">
+          <label>Author:</label>
+          <input class="form-control" type="text" name="author" id="author" />
+        </div>
+        <div class="form-group">
+          <label>ISBN#:</label>
+          <input class="form-control" type="text" name="isbn" id="isbn" />
+        </div>
+        <input class="form-submit" type="submit" value="Add Book" id="submit" />
+      </form>
+      <table class="book-table">
+        <thead>
+          <tr>
+            <th>
+              Title
+            </th>
+            <th>
+              Author
+            </th>
+            <th>
+              ISBN#
+            </th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
